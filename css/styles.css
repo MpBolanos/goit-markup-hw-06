@@ -234,7 +234,7 @@ button.close:hover {
 }
 
 .form-container-modal {
-  margin: 40px;
+  padding: 40px;
 }
 .form-text {
   width: 448px;
@@ -270,6 +270,7 @@ button.close:hover {
 .form-container-input {
   position: relative;
 }
+
 .form-input {
   width: 100%;
   margin-top: 4px;
@@ -279,20 +280,25 @@ button.close:hover {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--transition-duration) var(--timing-function);
-}
-
-.form-input:focus,
-.form-textarea:focus {
-  border-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .form-icon {
   position: absolute;
   left: 12px;
   top: 50px;
-  transform: translateY(-220%);
+  transform: translateY(-50%);
   fill: var(--primary-text-color);
   transition: fill var(--transition-duration) var(--timing-function);
+}
+
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--accent-color);
 }
 
 .form-textarea {
@@ -310,23 +316,27 @@ button.close:hover {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms var(--transition-duration);
+  cursor: pointer;
 }
 
+.form-container-checkbox {
+  margin-bottom: 10px;
+}
 .form-btnsend {
   width: 200px;
   height: 50px;
   left: 700px;
   top: 712px;
-  margin-top: 5px;
+
+  margin: 0 auto;
 
   background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   border-radius: 4px;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  /* identical to box height, or 188% */
 
   display: flex;
   align-items: center;
@@ -335,9 +345,15 @@ button.close:hover {
   letter-spacing: 0.06em;
   color: var(--primary-background-color);
   border: none;
+  cursor: pointer;
 }
 
-.text-clause {
+.form-btnsend:focus,
+.form-btnsend:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.form-text-policy {
   width: 400.62px;
   height: 24px;
   left: 612.38px;
@@ -350,6 +366,21 @@ button.close:hover {
   letter-spacing: 0.03em;
 
   color: var(--secundary-text-color);
+}
+
+.form-checkbox-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-icon-check {
+  border: 1px solid var(--primary-text-color);
+  transition: background-color var(--transition-duration) var(--timing-function);
+}
+
+.form-checkbox-input:checked + .form-icon-check {
+  background-color: var(--accent-color);
 }
 
 /*SECTION-INTRO*/
@@ -766,6 +797,7 @@ li.social-networks-item:hover svg {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   transition: border-color var(--transition-duration) var(--timing-function);
+  cursor: pointer;
 }
 
 .form-input-footer:focus {
@@ -801,6 +833,7 @@ li.social-networks-item:hover svg {
   fill: var(--primary-background-color);
   margin-left: 20px;
 }
+
 /*PORTFOLIO*/
 
 .nav-list {

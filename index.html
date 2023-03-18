@@ -119,8 +119,11 @@
                
                 <label class="form-label-checkbox"></label>
                   <div class="form-container-checkbox">
-                    <input type="checkbox" name="clause" id="clause">
-                    <span class="text-clause">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</span>
+                    <input type="checkbox" class="form-checkbox-input" name="policy" id="policy" value="accept">
+                    <svg class="form-icon-check" width="16" height="15">
+                      <use href="./images/icons.svg#icon-checkbox"></use>
+                    </svg>
+                    <span class="form-text-policy">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</span>
                   </div>
                 
                 <button type="submit" class="form-btnsend">Enviar</button>
@@ -505,7 +508,7 @@
             <form action="" class="footer-form">
               <label for="mail" class="footer-label-suscribe">SUSCRÍBASE AL BOLETÍN INFORMATICO</label>
               <div class="footer-container-send">
-                <input type="email" class="form-input-footer" name="mail" id="mail" placeholder="Correo electrónico">
+                <input type="email" class="form-input-footer" name="mail" id="mail" placeholder="Correo electrónico" required>
                 <button type="submit" class="footer-btn">Suscríbase
                   <svg class="form-footer-icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-suscribe"></use>
