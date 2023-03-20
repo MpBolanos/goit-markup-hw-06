@@ -286,8 +286,8 @@ button.close:hover {
 .form-icon {
   position: absolute;
   left: 12px;
-  top: 50px;
-  transform: translateY(-50%);
+  top: 20px;
+  transform: translateY(-20%);
   fill: var(--primary-text-color);
   transition: fill var(--transition-duration) var(--timing-function);
 }
@@ -375,8 +375,9 @@ button.close:hover {
 }
 
 .form-icon-check {
-  border: 1px solid var(--primary-text-color);
-  transition: background-color var(--transition-duration) var(--timing-function);
+  border: 1px solid var(--secundary-text-color);
+  transition: background-color fill var(--transition-duration)
+    var(--timing-function);
 }
 
 .form-checkbox-input:checked + .form-icon-check {
@@ -798,6 +799,7 @@ li.social-networks-item:hover svg {
   border-radius: 4px;
   transition: border-color var(--transition-duration) var(--timing-function);
   cursor: pointer;
+  outline: none;
 }
 
 .form-input-footer:focus {
@@ -818,10 +820,6 @@ li.social-networks-item:hover svg {
   font-size: 16px;
   line-height: 30px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   letter-spacing: 0.06em;
 
   color: var(--primary-background-color);
