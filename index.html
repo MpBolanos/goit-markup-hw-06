@@ -75,62 +75,6 @@
             Solicite nuestro servicio
           </button>
         </div>
-
-        <!--VENTANA MODAL-->
-        <div class= "backdrop is-hidden " data-modal>
-          <div class="modal">
-            <button type="button" class="close" data-modal-close>
-              <svg class="icon-close" width="15" height="15">
-                    <use href="./images/icons.svg#icon-close"></use></svg
-                  >
-            </button>
-            <form action="on" class="form-modal">
-              <div class="form-container-modal">
-                <p class="form-text">Deje sus datos, nos contactaremos con usted</p>
-              
-                <label for="name" class="form-label">Nombre</label>
-                <div class="form-container-input">
-                  <input type="text" class="form-input" name="name" id="name" required/>
-                  <svg class="form-icon" width="15" height="15">
-                    <use href="./images/icons.svg#icon-person"></use>
-                  </svg>
-                </div>
-                
-                <label for="phone" class="form-label">Teléfono</label>
-                  <div class="form-container-input">
-                    <input type="tel" class="form-input" name="phone" id="phone" required/>
-                    <svg class="form-icon" width="15" height="15">
-                      <use href="./images/icons.svg#icon-phone"></use>
-                    </svg>
-                  </div>
-              
-                <label for="eamil" class="form-label">E-mail</label>
-                  <div class="form-container-input">
-                    <input type="email" class="form-input" name="email" id="email" required/>
-                    <svg class="form-icon" width="15" height="15">
-                      <use href="./images/icons.svg#icon-mail"></use>
-                    </svg>
-                  </div>
-              
-                <label for="comment" class="form-label">Comentarios</label>
-                <div class="form-container-textarea">
-                  <textarea name="comment" id="comment" class="form-textarea" cols="30" rows="10" placeholder="Introduzca el texto"></textarea>
-                </div>
-               
-                <label class="form-label-checkbox">
-                  <div class="form-container-checkbox">
-                    <input type="checkbox" class="form-checkbox-input" name="policy" id="policy" value="accept">
-                    <svg class="form-icon-check" width="16" height="15">
-                      <use href="./images/icons.svg#icon-checkbox"></use>
-                    </svg>
-                    <span class="form-text-policy">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</span>
-                  </div>
-                </label>
-                <button type="submit" class="form-btnsend">Enviar</button>
-              </div>
-            </form>
-          </div>
-        </div>
       </section>
 
       <!-- Contiene la sección de los beneficios que ofrece la empresa-->
@@ -521,6 +465,62 @@
       </div>
     </footer>
 
+     <!--VENTANA MODAL-->
+     <div class= "backdrop is-hidden " data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close" data-modal-close>
+          <svg class="modal__close--icon" width="15" height="15">
+                <use href="./images/icons.svg#icon-close"></use></svg
+              >
+        </button>
+        <form action="on" class="form-modal">
+          <div class="form-container-modal">
+            <p class="form-text">Deje sus datos, nos contactaremos con usted</p>
+          
+            <label for="name" class="form-label">Nombre</label>
+            <div class="form-container-input">
+              <input type="text" class="form-input" name="name" id="name" required/>
+              <svg class="form-icon" width="15" height="15">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+            
+            <label for="phone" class="form-label">Teléfono</label>
+              <div class="form-container-input">
+                <input type="tel" class="form-input" name="phone" id="phone" required/>
+                <svg class="form-icon" width="15" height="15">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+          
+            <label for="eamil" class="form-label">E-mail</label>
+              <div class="form-container-input">
+                <input type="email" class="form-input" name="email" id="email" required/>
+                <svg class="form-icon" width="15" height="15">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+              </div>
+          
+            <label for="comment" class="form-label">Comentarios</label>
+            <div class="form-container-textarea">
+              <textarea name="comment" id="comment" class="form-textarea" cols="30" rows="10" placeholder="Introduzca el texto"></textarea>
+            </div>
+           
+            <label class="form-label-checkbox">
+              <div class="form-container-checkbox">
+                <input type="checkbox" class="form-checkbox-input" name="policy" id="policy" value="accept">
+                <svg class="form-icon-check" width="16" height="15">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+                <span class="form-text-policy">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</span>
+              </div>
+            </label>
+            
+            <button type="submit" class="form-btnsend">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
